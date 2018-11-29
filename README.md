@@ -23,4 +23,4 @@ On va voir :
  Les ressources : 
   - [le guide, _migrations_](https://rasa.com/docs/core/migrations/)
   - [Un cours du site du zéro, _gérez votre code avec Git et GitHub_](https://openclassrooms.com/en/courses/2342361-gerez-votre-code-avec-git-et-github)
-  - [La beauté sauvera, _awesome readme_](https://github.com/matiassingers/awesome-readme)
+  - [La beauté sauvera le code, _awesome readme_](https://github.com/matiassingers/awesome-readme)
