@@ -9,7 +9,7 @@ from builtins import str
 from flask import Blueprint, request, jsonify
 
 from rasa_core.channels.channel import UserMessage, OutputChannel
-from rasa_core.channels.rest import HttpInputComponent
+from rasa_core.channels.channel import InputChannel 
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +28,7 @@ class SlackBot(OutputChannel):
 		CLIENT.api_call('chat.postMessage', channel = self.channel, text = text, as_user = True)
 		
 
-class SlackInput(HttpInputComponent):
+class SlackInput(InputChannel): 
 	def __init__(self, slack_dev_token, slack_verification_token, slack_client, debug_mode):
 		self.slack_dev_token = slack_dev_token
 		self.debug_mode = debug_mode

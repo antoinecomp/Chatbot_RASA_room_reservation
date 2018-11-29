@@ -25,8 +25,8 @@ def train_dialogue(domain_file = 'room_domain.yml',
 	data = agent.load_data(training_data_file)
 	agent.train(
 				data,
-				epochs = 300,
-				batch_size = 50,
+				#epochs = 300,
+				#batch_size = 50,
 				validation_split = 0.2)
 				
 	agent.persist(model_path)
@@ -34,9 +34,13 @@ def train_dialogue(domain_file = 'room_domain.yml',
 	
 def run_room_bot(serve_forever=True):
     interpreter = RasaNLUInterpreter('./models/nlu/default/roomnlu')
+    print("after interpreter")
     action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
+    print("after action_endpoint")
     agent = Agent.load('./models/dialogue', interpreter = interpreter, action_endpoint=action_endpoint)
+    print("after agent")
     agent = Agent.load('./models/dialogue', interpreter = interpreter)
+    print("after agent 2")
     rasa_core.run.serve_application(agent ,channel='cmdline')
     return agent
 	

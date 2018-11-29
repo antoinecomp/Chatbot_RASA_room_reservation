@@ -15,9 +15,9 @@ if __name__ == '__main__':
 	model_path = './models/dialogue'
 	
 	agent = Agent('room_domain.yml', policies = [MemoizationPolicy(max_history = 2), KerasPolicy()])
-	
+	data = agent.load_data(training_data_file)
 	agent.train(
-			training_data_file,
+			data,
 			epochs = 500,
 			batch_size = 10,
 			validation_split = 0.2)

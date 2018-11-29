@@ -15,6 +15,7 @@ entities:
 - day
 - hour_start
 - duration
+forms: []
 intents:
 - greet:
     use_entities: true
@@ -24,15 +25,19 @@ intents:
     use_entities: true
 slots:
   day:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   duration:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   hour_start:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   name_room:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:

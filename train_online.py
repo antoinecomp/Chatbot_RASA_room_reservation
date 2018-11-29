@@ -9,7 +9,7 @@ from rasa_core.agent import Agent
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
-from rasa_core.train import online
+# from rasa_core.train import online
 from rasa_core.utils import EndpointConfig
 
 #from rasa_core.channels.console import ConsoleInputChannel
@@ -31,12 +31,14 @@ def run_weather_online(interpreter,
 				  
     data = agent.load_data(training_data_file)
     
-    agent.train(data,
+    '''agent.train(data,
                        batch_size=50,
                        epochs=200,
                        max_training_samples=300)
 				   
-    online.run_online_learning(agent)
+    online.run_online_learning(agent)'''
+	
+    agent.train(data,max_training_samples=300)
     
     return agent
 

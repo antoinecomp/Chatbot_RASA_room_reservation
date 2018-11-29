@@ -1,7 +1,7 @@
 from rasa_core.channels.slack import SlackInput
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
-#from rasa_slack_connector import SlackInput
+from rasa_slack_connector import SlackInput
 import yaml
 from rasa_core.utils import EndpointConfig
 
