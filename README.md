@@ -43,7 +43,7 @@ Les principaux fichiers pour comprendre ce qu'il se passe sont :
  - train_online.py : script qui permet d'entrainer le modèle et mettre à jour stories.md pour améliorer le modèle.
  - models/
    - dialogue/
-     Beaucoup de fichiers qui font le modèle, prendront le temps de les expliquer plus tard :p 
+     Beaucoup de fichiers compliqués qui font le modèle :p 
  - dialogue_management_model.py: script qui permet de tester le chatbot
  - rasa_slack_conector.py : soon ...
  - run_app.py : soon ...
