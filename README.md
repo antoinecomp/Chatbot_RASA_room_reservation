@@ -30,6 +30,8 @@ Bientôt : comment interragir avec Slack.
 
 ## Composition
 
+Les principaux fichiers pour comprendre ce qu'il se passe sont : 
+
  - data/ :
    - data.json : exemples courants que je voudrais que mon chatbot apprenne
    - stories.md : anciennes conversations avec le chatbot qui aident à rendre le modèle plus précises.
@@ -49,3 +51,7 @@ Bientôt : comment interragir avec Slack.
 ## To-Do
 
 Voir s'il y a des probèmes sur la partie Slack et les corriger.
+
+## Un problème ? Une question ?
+
+N'hésitez vraiment pas à [ouvrir un problème](https://github.com/antoinecomp/Chatbot_RASA_room_reservation/issues) ou à me contacter !
