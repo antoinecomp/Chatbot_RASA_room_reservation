@@ -11,18 +11,6 @@
   </a>
 </div>
 
-Le cours/les conseils de la dernière fois ce trouve ici :
-On a vu :
-
- 1. Les nouveauté sur Rasa
- 2. Le README (installation, TO-DO) : faire un readme pro avec markdown.
- 3. Le travail collaboratif sur du code : Git, sa vie, ton oeuvre.
-
- Les ressources : 
-  - [le guide, _migrations_](https://rasa.com/docs/core/migrations/)
-  - [Un cours du site du zéro, _gérez votre code avec Git et GitHub_](https://openclassrooms.com/en/courses/2342361-gerez-votre-code-avec-git-et-github)
-  - [La beauté sauvera le code, _awesome readme_](https://github.com/matiassingers/awesome-readme)
-  
 Ici, la correction du chatbot basé sur rasa. Le principal problème que j'ai rencontré était dû à la migration.
 
 Dans le wiki setrouve le cours/les conseils du 29 novembre 2018.
