@@ -3,18 +3,18 @@
     "action_listen": {
       "slots": [
         "name_room",
-        "hour_start",
         "duration",
+        "hour_start",
         "day"
       ]
     },
     "utter_goodbye": {
       "slots": []
     },
-    "utter_greet": {
+    "action_room": {
       "slots": []
     },
-    "action_room": {
+    "utter_greet": {
       "slots": []
     }
   },
@@ -29,5 +29,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20181129-173223"
+  "trained_at": "20181130-103318"
 }
